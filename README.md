@@ -13,6 +13,8 @@ Like Ableton Live's looper, TimestretchLooper does "sound on sound" recording, b
 
 - OSC input and output for controlling and monitoring any parameter of the device.
 
+- Companion "TSLooperMidiControl" device for controlling Looper playback via OSC -> sample cutting instrument like [mlr](https://github.com/monome-community/mlr).
+
 # Known Bugs
 
 - Windowing improvements needed. Makes pops occasionally with overdub and multiply, not with record, and usually when starting or stoping in the middle of an already present sound.
@@ -21,10 +23,10 @@ Like Ableton Live's looper, TimestretchLooper does "sound on sound" recording, b
 
 - Undo / Redo Functions -> More buffers.
 - Multiple Loops / Looper
-- Choice of destructive (Pitch Change) overdub or not
-- Quantize overdub choice
 
 # Change Log
+10/19/18 (JE) Added TSLooperMidiControl companion device. Converts incoming midi note pitches to playback positions for the looper. Allows sample cutting like [mlr](https://github.com/monome-community/mlr). 
+
 10/14/18 (JE) Dusted off the old device and replaced DiracLE with Max's awesome new(ish) groove~ functionality. This upates the device to work with 64-bit and now should work for both Mac and Windows.
 
 01/18/13 (JE) Got things ready to be published online. It's time to let people play with it and make it their own. Please think of contributing to this project if you've got the time and interest :).
